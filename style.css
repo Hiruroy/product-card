@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url(img/llleaves.svg) #1f0068;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: poppins;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box .card {
+  width: 300px;
+  height: 450px;
+  padding: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px;
+}
+
+.box .card .img {
+  width: 100%;
+  height: 64%;
+  background-image: url(img/pexels-moose-photos-1037992.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+.box .card .img::after {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  content: "";
+  border-radius: 50%;
+  -webkit-box-shadow: -10px 10px 0px #1f0068;
+          box-shadow: -10px 10px 0px #1f0068;
+  bottom: 0;
+  left: 50%;
+}
+
+.box .card .img::before {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  content: "";
+  border-radius: 50%;
+  -webkit-box-shadow: -10px 10px 0px #1f0068;
+          box-shadow: -10px 10px 0px #1f0068;
+  bottom: 14%;
+  left: 0%;
+}
+
+.box .card .img2 {
+  background-image: url(img/pexels-rodion-kutsaiev-9436715.jpg);
+}
+
+.box .card .img3 {
+  background-image: url(img/pexels-rodion-kutsaiev-8566875.jpg);
+}
+
+.box .card .content {
+  width: 100%;
+  height: 33.7%;
+  background: white;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  position: relative;
+}
+
+.box .card .content ul {
+  margin-left: 35px;
+  margin-top: 20px;
+  list-style: url(img/checkmark.png);
+  font-size: 14px;
+}
+
+.box .card .content ul li {
+  padding-bottom: 5px;
+}
+
+.box .card .content .price {
+  position: absolute;
+  width: 50%;
+  height: 50px;
+  background-color: white;
+  bottom: 100%;
+  border-top: 10px solid #1f0068;
+  border-right: 10px solid #1f0068;
+  border-top-right-radius: 25px;
+}
+
+.box .card .content .price a {
+  position: absolute;
+  width: 110px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #26004f;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  margin: 10px;
+  border: 2px solid white;
+  outline: 2px solid white;
+}
+
+.box .card .content .price a:hover {
+  background-color: #1b006c;
+  padding: 5px;
+  border-radius: 10px;
+  border: 5px solid white;
+  line-height: 20px;
+  outline: 2px solid black;
+}
+
+.box .card .content .price::after {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  content: "";
+  border-radius: 50%;
+  -webkit-box-shadow: -10px -10px 0px #1f0068;
+          box-shadow: -10px -10px 0px #1f0068;
+}
+
+.box .card .content .price::before {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(255, 0, 0, 0);
+  content: "";
+  border-radius: 50%;
+  -webkit-box-shadow: -10px 10px 0px white;
+          box-shadow: -10px 10px 0px white;
+  right: -25px;
+  bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
